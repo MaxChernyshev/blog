@@ -6,7 +6,7 @@ core_version_requirement: ^8 || ^9
 base theme: bootstrap_barrio
 
 libraries:
-  - barrio_custom_subtheme/bootstrap_cdn
+  - barrio_custom_subtheme/bootstrap
   - barrio_custom_subtheme/global-styling
 
 regions:
