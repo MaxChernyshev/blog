@@ -1,0 +1,8 @@
+uuid: be5e47db-21fb-484d-8856-0de00870e6ba
+langcode: en
+status: true
+dependencies: {  }
+id: categories-menu
+label: 'Categories Menu'
+description: 'Categories Menu'
+locked: false

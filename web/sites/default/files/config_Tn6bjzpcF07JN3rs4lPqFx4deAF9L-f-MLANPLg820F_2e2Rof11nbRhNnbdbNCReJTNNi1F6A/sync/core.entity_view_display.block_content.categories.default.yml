@@ -1,0 +1,55 @@
+uuid: 8c353dbe-8cc3-4ab9-8794-54679274f95e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.categories
+    - field.field.block_content.categories.field_categories
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f03cdf48-ea9c-451f-8596-7b56c7b54a26:
+            uuid: f03cdf48-ea9c-451f-8596-7b56c7b54a26
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:categories:field_categories'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: block_content.categories.default
+targetEntityType: block_content
+bundle: categories
+mode: default
+content:
+  field_categories:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }
