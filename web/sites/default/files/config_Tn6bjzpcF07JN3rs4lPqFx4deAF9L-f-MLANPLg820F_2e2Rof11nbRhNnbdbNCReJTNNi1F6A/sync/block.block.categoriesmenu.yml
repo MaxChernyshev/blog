@@ -1,0 +1,25 @@
+uuid: bb28683a-3182-49d4-86bb-591142d658ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.categories-menu
+  module:
+    - system
+  theme:
+    - barrio_custom_subtheme
+id: categoriesmenu
+theme: barrio_custom_subtheme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:categories-menu'
+settings:
+  id: 'system_menu_block:categories-menu'
+  label: 'all categories'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

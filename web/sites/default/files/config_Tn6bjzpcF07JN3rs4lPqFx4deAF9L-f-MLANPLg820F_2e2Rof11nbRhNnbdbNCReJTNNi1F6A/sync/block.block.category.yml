@@ -1,0 +1,39 @@
+uuid: 8b291298-ec78-432c-948d-5daceab18f72
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - ctools_block
+  theme:
+    - barrio_custom_subtheme
+id: category
+theme: barrio_custom_subtheme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'entity_field:node:field_category'
+settings:
+  id: 'entity_field:node:field_category'
+  label: category
+  provider: ctools_block
+  label_display: '0'
+  formatter:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      news: news
+      news_item: news_item
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,8 @@
+uuid: f33c6a65-5764-44c7-998f-7c04c688d597
+langcode: en
+status: true
+dependencies: {  }
+id: categories
+label: Categories
+revision: 0
+description: 'Block for showing categories in sidebar'

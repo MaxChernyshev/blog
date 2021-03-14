@@ -1,11 +1,11 @@
 uuid: 83065ccf-3334-4465-bc38-3af2499c703a
 name: 'Star Wars blog'
 mail: maksim.chernyshev@gmail.com
-slogan: ''
+slogan: 'Star Wars blog'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /front_page
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

@@ -19,11 +19,31 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
             - Strike
             - Superscript
             - Subscript
             - '-'
             - RemoveFormat
+        -
+          name: Copy-Paste
+          items:
+            - Copy
+            - PasteText
+            - Paste
+            - Cut
+        -
+          name: Align
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+        -
+          name: Paragraph
+          items:
+            - Outdent
+            - Indent
         -
           name: Linking
           items:
@@ -50,14 +70,22 @@ settings:
           items:
             - ShowBlocks
             - Source
+            - Styles
+        -
+          name: Steps
+          items:
+            - Undo
+            - Redo
   plugins:
+    language:
+      language_list: un
     stylescombo:
       styles: ''
 image_upload:
   status: true
   scheme: public
   directory: inline-images
-  max_size: ''
+  max_size: 2M
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null
